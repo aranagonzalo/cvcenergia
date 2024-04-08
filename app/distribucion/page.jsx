@@ -291,6 +291,11 @@ const Page = () => {
                                         layout="fill"
                                         objectFit="cover"
                                     />
+                                    {linea.enproyecto && (
+                                        <div className="z-10 bg-custom-grey text-base h-12 flex absolute top-[0px] left-[0px] p-2 w-full items-center justify-center text-custom-cream uppercase">
+                                            En proyecto
+                                        </div>
+                                    )}
                                 </div>
                                 <div className="p-8 flex flex-col gap-10">
                                     <div className="flex justify-end">
@@ -306,7 +311,11 @@ const Page = () => {
                                     </div>
                                     <div>
                                         <p className="text-sm font-light pb-2">
-                                            Inversión en activos
+                                            {linea.title === "Piura" ||
+                                            linea.title === "Moquegua" ||
+                                            linea.title === "Tacna"
+                                                ? "Inversión proyectada en activos"
+                                                : "Inversión en activos"}
                                         </p>{" "}
                                         <strong className="text-lg font-medium">
                                             {linea.inversion}
@@ -314,7 +323,11 @@ const Page = () => {
                                     </div>
                                     <div>
                                         <p className="text-sm font-light pb-2">
-                                            Demanda actual
+                                            {linea.title === "Piura" ||
+                                            linea.title === "Moquegua" ||
+                                            linea.title === "Tacna"
+                                                ? "Demanda proyectada"
+                                                : "Demanda actual"}
                                         </p>{" "}
                                         <strong className="text-lg font-medium leading-tight">
                                             {linea.demanda}

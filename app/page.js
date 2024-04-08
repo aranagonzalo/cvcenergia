@@ -178,9 +178,6 @@ export default function Home() {
                             <p className="text-lg lg:text-xl text-custom-cream font-extralight text-center">
                                 hectáreas de cultivo atendidas
                             </p>
-                            <p className="text-lg lg:text-xl text-custom-cream font-extralight">
-                                con nuestros servicios
-                            </p>
                         </ScrollTrigger>
                         <ScrollTrigger className="flex flex-col items-center justify-center w-1/3">
                             <h1 className="lg:text-7xl font-semibold pb-6 text-custom-cream">
@@ -334,7 +331,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section className="w-full hidden lg:flex h-[85vh]">
+                <section className="w-full hidden lg:flex">
                     <div
                         className="relative bg-custom-grey text-custom-cream w-1/2 p-32 items-end justify-start flex transition-all duration-500 bg-cover"
                         style={{

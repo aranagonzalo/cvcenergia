@@ -292,6 +292,52 @@ const Page = () => {
                         className="px-16 py-0"
                     />
                 </div>
+                <div className="flex justify-center p-12 bg-custom-cream">
+                    <ul className="flex flex-col justify-evenly gap-12 items-start w-full m-0">
+                        <motion.li
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{
+                                opacity: 1,
+                                x: 0,
+                                transition: { duration: 0.5 },
+                            }}
+                            className="text-left"
+                        >
+                            <p className="font-light text-2xl pb-2">
+                                clientes libres
+                            </p>
+                            <h1 className="font-medium text-4xl">+210</h1>
+                        </motion.li>
+                        <motion.li
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{
+                                opacity: 1,
+                                x: 0,
+                                transition: { duration: 0.5 },
+                            }}
+                            className="text-left"
+                        >
+                            <p className="font-light text-2xl pb-2">
+                                MW contratados
+                            </p>
+                            <h1 className="font-medium text-4xl">+220</h1>
+                        </motion.li>
+                        <motion.li
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{
+                                opacity: 1,
+                                x: 0,
+                                transition: { duration: 0.5 },
+                            }}
+                            className="text-left"
+                        >
+                            <p className="font-light text-2xl pb-2">
+                                ahorros anuales
+                            </p>
+                            <h1 className="font-medium text-4xl">+70M</h1>
+                        </motion.li>
+                    </ul>
+                </div>
             </section>
             <section className="w-full h-[520px] lg:flex hidden">
                 <div className="w-1/3 relative">
